@@ -1,0 +1,21 @@
+.Tab-Container {
+  display: flex;
+  background-color: #fff;
+
+  .Button-Tab {
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: solid 1px rgba(48, 39, 90, 0.1);
+    color: #0a2540;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .Button-Tab--active {
+    color: #fff;
+    border: none;
+    background-color: #f00;
+  }
+}

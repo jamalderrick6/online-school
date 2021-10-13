@@ -1,0 +1,102 @@
+@import "./variables";
+@import "./navigation";
+@import "./_font";
+@import "./_tabs";
+@import "./auth";
+@import "./home";
+@import "./courses";
+@import "./course_details";
+@import "./pricing";
+@import "./gallery";
+@import "./contact";
+// @import'./tag-row';
+// @import './post-grid';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html body {
+  font-family: "kuazone";
+  background-color: $background;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    overflow-y: auto;
+
+    .wrapper {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.row {
+  margin: 4em 20px;
+}
+
+.overlay::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    transparent 18%,
+    rgba(0, 0, 0, 0.8) 99%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.background-slides {
+  background-size: cover;
+}
+
+.Alert {
+  position: absolute !important;
+  top: 85px !important;
+  bottom: 80% !important;
+}
